@@ -1,6 +1,8 @@
 <!-- Refilwe Pitso -->
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Schedly - Login</title>
@@ -9,33 +11,60 @@
 
 <body>
 
-    <!-- Navigation Bar -->
-    <nav>
-        <h1>Schedly</h1>
-        <a href="index.html">Login</a>
-        <a href="dashboard.html">Dashboard</a>
-        <a href="page-3.html">Features</a>
-        <a href="page-4.html">More</a>
-    </nav>
+    <div class="container">
 
-    <!-- Login Section -->
-    <section>
-        <h2>Login to Schedly</h2>
-        <p>Manage your schedule easily and efficiently.</p>
+        <!-- LEFT: Login Section -->
+        <div class="login-section">
 
-        <form>
-            <label>Email:</label><br>
-            <input type="email" placeholder="Enter your email"><br><br>
+            <h1>Schedly</h1>
 
-            <label>Password:</label><br>
-            <input type="password" placeholder="Enter your password"><br><br>
+            <h2>Login</h2>
 
-            <!-- For now just link to dashboard -->
-            <a href="dashboard.html">
-                <button type="button">Login</button>
-            </a>
-        </form>
-    </section>
+            <label>Username:</label>
+            <input type="text" placeholder="Username">
+
+            <label>Password:</label>
+            <input type="password" placeholder="Password">
+
+            <button>Log in</button>
+
+            <p>
+                <a href="#">Create account</a> |
+                <a href="#">Forgot password</a>
+            </p>
+
+        </div>
+
+        <!-- RIGHT: Sign Up Section -->
+        <div class="signup-section">
+
+            <h2>Sign in</h2>
+
+            <label>Username:</label>
+            <input type="text" placeholder="Username">
+
+            <label>Email:</label>
+            <input type="email" placeholder="Email">
+
+            <label>Password:</label>
+            <input type="password" placeholder="Password">
+
+            <button>Create Account</button>
+
+            <hr>
+
+            <!-- Password Reset -->
+            <h3>Password Reset</h3>
+
+            <label>Email:</label>
+            <input type="email" placeholder="Enter your email">
+
+            <button>Email me verification code</button>
+
+        </div>
+
+    </div>
 
 </body>
+
 </html>
