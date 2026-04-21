@@ -131,3 +131,19 @@ input:focus, textarea:focus, select:focus {
     border: 2px solid #6c5ce7;
     outline: none;
 }
+/* DETAIL PAGE */
+.detail-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    width: 300px;
+}
+
+/* STATUS BADGE (required visual element) */
+.status-badge {
+    background-color: orange;
+    padding: 5px 10px;
+    border-radius: 8px;
+    color: white;
+}
