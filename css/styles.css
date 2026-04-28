@@ -1,91 +1,107 @@
-/* RESET */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+    background-color: #f4f6fb;
+    color: #2d3436;
 }
 
 /* HEADER */
 header {
-    background-color: #6c5ce7;
+    background: linear-gradient(to right, #6c5ce7, #8e7dff);
     color: white;
-    padding: 15px;
+    padding: 18px;
     text-align: center;
+    font-size: 22px;
+    font-weight: bold;
 }
 
-/* NAVIGATION */
+/* NAV */
 nav {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    background-color: #dfe6e9;
-    padding: 10px;
+    gap: 25px;
+    background-color: #eef1f7;
+    padding: 12px;
 }
 
 nav a {
     text-decoration: none;
-    color: #2d3436;
-    font-weight: bold;
+    color: #555;
+    font-weight: 600;
+    transition: 0.2s;
 }
 
-/* ACTIVE PAGE */
+nav a:hover {
+    color: #6c5ce7;
+}
+
 nav a.active {
     color: #6c5ce7;
 }
 
-/* MAIN CONTENT */
+/* MAIN */
 main {
-    padding: 20px;
+    padding: 25px;
 }
 
-/* SECTIONS */
+/* SECTION */
 section {
-    margin-bottom: 30px;
+    margin-bottom: 35px;
 }
 
-/* BUTTONS */
+/* BUTTON */
 button {
-    padding: 8px 12px;
-    margin-top: 5px;
+    padding: 8px 14px;
+    margin-top: 8px;
     border: none;
-    border-radius: 5px;
+    border-radius: 6px;
     background-color: #6c5ce7;
     color: white;
     cursor: pointer;
+    font-size: 13px;
+    transition: 0.2s;
 }
 
 button:hover {
-    background-color: #5a4bcf;
+    background-color: #5848c2;
 }
 
-/* FILTER DROPDOWN */
+/* SELECT */
 select {
-    padding: 5px;
+    padding: 6px;
     margin-top: 10px;
-}
-
-/* GRID LAYOUT */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
-}
-
-/* CARD STYLE */
-.card {
-    background-color: white;
-    padding: 15px;
-    border-radius: 10px;
+    border-radius: 5px;
     border: 1px solid #ccc;
 }
 
-/* TAGS */
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+/* CARD */
+.card {
+    background-color: white;
+    padding: 18px;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    transition: 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+}
+
+/* TAG */
 .tag {
     display: inline-block;
     padding: 5px 10px;
-    border-radius: 8px;
-    font-size: 12px;
-    margin-top: 5px;
+    border-radius: 10px;
+    font-size: 11px;
+    margin-top: 6px;
 }
 
 /* TAG COLORS */
@@ -97,53 +113,67 @@ select {
     background-color: #81ecec;
 }
 
-/* TIMER */
-.timer {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    width: 200px;
+.other {
+    background-color: #ffeaa7;
 }
 
-/* FOOTER */
-footer {
-    text-align: center;
-    padding: 15px;
-    background-color: #dfe6e9;
-    margin-top: 30px;
-}
-/* FORM STYLING */
+/* FORM */
 form {
     background-color: white;
     padding: 20px;
-    border-radius: 10px;
-    width: 300px;
+    border-radius: 12px;
+    width: 320px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
 
 input, select, textarea {
     width: 100%;
     padding: 8px;
-    margin-top: 5px;
+    margin-top: 6px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
 }
 
-/* REQUIRED: focus effect */
+/* FOCUS */
 input:focus, textarea:focus, select:focus {
     border: 2px solid #6c5ce7;
     outline: none;
 }
-/* DETAIL PAGE */
+
+/* DETAIL */
 .detail-card {
     background-color: white;
     padding: 20px;
-    border-radius: 10px;
-    border: 1px solid #ccc;
-    width: 300px;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+    width: 320px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
 
-/* STATUS BADGE (required visual element) */
+/* STATUS */
 .status-badge {
-    background-color: orange;
+    background-color: #fd9644;
     padding: 5px 10px;
-    border-radius: 8px;
+    border-radius: 10px;
     color: white;
+    font-size: 12px;
+}
+
+/* TIMER */
+.timer {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    width: 220px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 18px;
+    background-color: #eef1f7;
+    margin-top: 40px;
+    font-size: 14px;
+    color: #555;
 }
