@@ -1,1 +1,108 @@
+<!-- Zhu Zijie -->
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Schedly - Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Schedly</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html">Login</a>
+        <a href="page-2.html" class="active">Dashboard</a>
+        <a href="page-3.html">Features</a>
+        <a href="page-4.html">More</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Original Dashboard Section -->
+        <section>
+            <h2>Dashboard</h2>
+            <p>This dashboard will allow users to manage their weekly schedule and tasks.</p>
+
+            <h3>Weekly Calendar (Coming Soon)</h3>
+            <p>A calendar view will be displayed here where users can organize their time.</p>
+
+            <h3>Today's Tasks</h3>
+            <ul>
+                <li>Study for exam</li>
+                <li>Attend meeting at 3PM</li>
+                <li>Workout</li>
+            </ul>
+
+            <button>Add New Task</button>
+            <button>View Full Calendar</button>
+        </section>
+
+        <!-- ✅ REQUIRED: Filter -->
+        <section>
+            <h3>Filter Tasks</h3>
+            <select>
+                <option>All</option>
+                <option>Work</option>
+                <option>Personal</option>
+            </select>
+        </section>
+
+        <!-- ✅ REQUIRED: Content Grid -->
+        <section class="grid">
+
+            <div class="card">
+                <h3>Study for exam</h3>
+                <p>Date: Apr 22</p>
+                <span class="tag work">Work</span>
+                <button>View</button>
+            </div>
+
+            <div class="card">
+                <h3>Meeting</h3>
+                <p>Date: Apr 22 - 3PM</p>
+                <span class="tag work">Work</span>
+                <button>Edit</button>
+            </div>
+
+            <div class="card">
+                <h3>Workout</h3>
+                <p>Date: Apr 22</p>
+                <span class="tag personal">Personal</span>
+                <button>Complete</button>
+            </div>
+
+        </section>
+
+        <!-- Timer Section -->
+        <section>
+            <h3>Timer</h3>
+
+            <div class="timer">
+                <p class="time-display">25:00</p>
+                <p>Time</p>
+
+                <button>Start</button>
+                <button>Pause</button>
+                <button>Reset</button>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ✅ REQUIRED: Footer -->
+    <footer>
+        <p>© 2026 Schedly</p>
+    </footer>
+
+</body>
+
+</html>
